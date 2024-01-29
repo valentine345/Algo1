@@ -1,0 +1,18 @@
+ALGORITHM  Checkpoint
+VAR
+     a : CHAR;
+     conteur, voyel : INTEGER:= 0;
+    
+BEGIN
+     REPEAT
+        Write ("Donnez un caractere");
+        Read (a)
+        conteur := conteur + 1;
+        IF ( a = 'a' OR a = 'e' OR a = 'i' OR a = 'o' OR a = 'u' OR a = 'y' ) THEN
+              voyel = voyel + 1;
+        END_IF
+     UNTIL ( a = '.')
+    Write ("Le nombres de caractere est" conteur );
+
+    Write (" Le nombres de voyel est" voyel );
+END
